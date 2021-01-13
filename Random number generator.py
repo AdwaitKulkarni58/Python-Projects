@@ -6,8 +6,8 @@ num_list=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,2
 def add_interval():
   global a 
   global b
-  a = int(input("Enter the left interval"))
-  b = int(input("Enter the right interval"))
+  a = int(input("Enter the left interval which should be greater than 1 and less than a 100"))
+  b = int(input("Enter the right interval which should be greater than 1 and less than 100"))
   return a,b
   valid_intervals()
 add_interval()
@@ -28,6 +28,6 @@ def play_again():
   elif str(ask)=="N": 
     print("Thanks for playing!")
   else:
-    print("Enter valid response")
+    print("Enter valid response of either Y or N")
     exit
 play_again()
